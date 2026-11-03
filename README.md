@@ -13,6 +13,8 @@ brew install wmn
 brew install --cask threadedstack/wmn/wmn-app
 ```
 
+Homebrew 7 and later loads formulae of a tap that is not Homebrew's own only after you trust it. If `brew install wmn` says it refuses to load the formula from an untrusted tap, run `brew trust threadedstack/wmn` once (or install by the full name, `brew install threadedstack/wmn/wmn`).
+
 ## Update
 
 Every wmn release updates both files of this tap, so:
