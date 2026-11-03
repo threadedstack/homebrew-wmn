@@ -9,11 +9,12 @@ The Homebrew tap of [wmn](https://github.com/threadedstack/wmn-releases). It ins
 
 ```sh
 brew tap threadedstack/wmn
+brew trust threadedstack/wmn
 brew install wmn
 brew install --cask threadedstack/wmn/wmn-app
 ```
 
-Homebrew 7 and later loads formulae of a tap that is not Homebrew's own only after you trust it. If `brew install wmn` says it refuses to load the formula from an untrusted tap, run `brew trust threadedstack/wmn` once (or install by the full name, `brew install threadedstack/wmn/wmn`).
+Homebrew 7 and later loads formulae and casks of a tap that is not Homebrew's own only after you trust it, so run `brew trust threadedstack/wmn` once, right after `brew tap`. To stop trusting it later: `brew untrust --tap threadedstack/wmn`.
 
 ## Update
 
@@ -30,6 +31,7 @@ brew upgrade --cask wmn-app
 ```sh
 brew uninstall wmn
 brew uninstall --cask wmn-app
+brew untrust --tap threadedstack/wmn
 brew untap threadedstack/wmn
 ```
 
