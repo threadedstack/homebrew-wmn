@@ -1,15 +1,15 @@
 class Wmn < Formula
   desc "wmn: documents that run"
   homepage "https://github.com/threadedstack/wmn-releases"
-  url "https://github.com/threadedstack/wmn-releases/releases/download/v0.1.97/wmn-0.1.97-macos-arm64"
-  version "0.1.97"
-  sha256 "e82d612ddabfb9ec78bcf454648cf798add28cc5dceae8b8ac15954c6991e814"
+  url "https://github.com/threadedstack/wmn-releases/releases/download/v0.1.98/wmn-0.1.98-macos-arm64"
+  version "0.1.98"
+  sha256 "f874a0a30429d3a26b9b595eb19e42e0d3b1d7d9928890ad58e8fda115432f1c"
 
   depends_on :macos
   depends_on arch: :arm64
 
   def install
-    bin.install "wmn-0.1.97-macos-arm64" => "wmn"
+    bin.install "wmn-0.1.98-macos-arm64" => "wmn"
   end
 
   test do
