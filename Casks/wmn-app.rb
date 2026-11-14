@@ -1,6 +1,6 @@
 cask "wmn-app" do
-  version "0.1.151"
-  sha256 "a2b5813f98764d11d322388bb2984976ecf1830b0d6f6df7798cc4ec826af815"
+  version "0.2.0"
+  sha256 "71ccefded55a6a6a6a1cd10abaa08ee36eeb37b9d374d9b7605ff4f5cdebc909"
 
   url "https://github.com/threadedstack/wmn-releases/releases/download/v#{version}/wmn-#{version}-macos-arm64.dmg"
   name "wmn"
