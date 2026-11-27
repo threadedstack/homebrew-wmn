@@ -1,15 +1,15 @@
 class Wmn < Formula
   desc "wmn: documents that run"
   homepage "https://github.com/threadedstack/wmn-releases"
-  url "https://github.com/threadedstack/wmn-releases/releases/download/v0.2.39/wmn-0.2.39-macos-arm64"
-  version "0.2.39"
-  sha256 "eca5ffdabf2dc3716b24f891bd623c9e46b5cb9e081d6ab580fe0437f2fa981b"
+  url "https://github.com/threadedstack/wmn-releases/releases/download/v0.2.40/wmn-0.2.40-macos-arm64"
+  version "0.2.40"
+  sha256 "d2625c9fb8728ba185bf5c320607625aed9a17208b49306a5476167d0b8924ed"
 
   depends_on :macos
   depends_on arch: :arm64
 
   def install
-    bin.install "wmn-0.2.39-macos-arm64" => "wmn"
+    bin.install "wmn-0.2.40-macos-arm64" => "wmn"
   end
 
   # brew upgrade keeps what wmn setup made (wmd, the engine folder, the agent files) in step with the new binary; it does nothing
